@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>        <meta http-equiv="content-language" content="pt-br">
+        <meta name="description" content="Chega de stress na hora de encontrar e pagar o seu estacionamento. Busque, estacione, pague e tchau. Deixe o Lince descomplicar a sua vida">
+
+        <title>Reserve e Economize ao Estacionar | Lince</title>
+
+        <script src="js/JQuery/JQuery.js"></script>
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?region=br&amp;key=AIzaSyB8CFMoojLIUaovhYprOiLXF_VK2wpm2p4&amp;libraries=places"></script>
+        <link rel="stylesheet" href="css/app.css"/>
+        
+         <!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','../connect.facebook.net/en_US/fbevents.js');
+fbq('init', '921290244609366');
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=921290244609366&amp;ev=PageView&amp;noscript=1" />
+</noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+<!--start Google analytics -->
+<script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+
+ ga('create', 'UA-65981693-2', 'auto');
+ ga('send', 'pageview');
+
+</script>
+<!--END Google analytics -->
+
+<!-- start Mixpanel -->
+<script type="text/javascript">
+(function (e, a) {
+if (!a.__SV) {
+var b = window; try { var c, l, i, j = b.location, g = j.hash; c = function (a, b) { return (l = a.match(RegExp(b + "=([^&]*)"))) ? l[1] : null }; g && c(g, "state") && (i = JSON.parse(decodeURIComponent(c(g, "state"))), "mpeditor" === i.action && (b.sessionStorage.setItem("_mpcehash", g), history.replaceState(i.desiredHash || "", e.title, j.pathname + j.search))) } catch (m) { } var k, h; window.mixpanel = a; a._i = []; a.init = function (b, c, f) {
+function e(b, a) {
+var c = a.split("."); 2 == c.length && (b = b[c[0]], a = c[1]); b[a] = function () {
+b.push([a].concat(Array.prototype.slice.call(arguments,
+0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+mixpanel.init("f1004ba5d42bcb06a811293717504a4a");
+</script>
+<!-- end Mixpanel -->
+
+
+<!-- Hotjar Tracking Code for https://linceapp.com.br -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:177630,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<!--End Hotjar Tracking Code for https://linceapp.com.br -->
+
+<!-- <script src="https://cdn.optimizely.com/js/8405505337.js"></script> -->
+    </head>
+
+    <body>
+        <script src="js/app.js"></script>
+        <div id="conteudo-pagina">
+            <nav class="navbar navbar-default container-fluid">
+    <div class="header">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row no-gutter"> 
+            <a class="navbar-brand" href="index.html"><img class="logo-head" src="images/place/logo-horizontal.png" alt="LINCE BRAND"></a>
+            <div class="conteudo-search-navbar" id="header-search">
+                <div class="div-btn-pesquisa-nav">
+                    <a id="link-pesquisa-nav">
+                        <img src="images/place/index/search/Lupa-Index.png" class="img-lupa" alt="Lupa Busca">
+                    </a>
+                </div>
+                <input type="text" name="search" placeholder="Endereço, localidade ou bairro" id="local-google-header" />
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <ul class="nav navbar-nav navbar-right hidden-xs">
+                <li><a class="nav-link hidden" href="index.html">DESCOMPLIQUE</a></li>
+                <li><a class="nav-link" href="como-funciona.html">COMO FUNCIONA</a></li>
+                <!-- <li><a class="nav-link" href="http://evento.linceapp.com.br/">EVENTOS</a></li> -->
+                <li><a class="nav-link" href="http://blog.linceapp.com.br/">BLOG</a></li>
+            </ul>
+        </div>
+        <div class="row no-gutter"> 
+            <div class="col-xs-12 mobile-nav visible-xs no-gutter">
+                <div class="col-xs-3 hidden">
+                    <a class="nav-link-mob text-center" href="index.html">DESCOMPLIQUE</a>
+                </div>
+                <div class="col-xs-5">
+                    <a class="nav-link-mob text-center" href="como-funciona.html">COMO FUNCIONA</a>
+                </div>
+               <!--  <div class="col-xs-4">
+                    <a class="nav-link-mob text-center" href="http://evento.linceapp.com.br/">EVENTOS</a>
+                </div> -->
+                <div class="col-xs-3">
+                    <a class="nav-link-mob text-center" href="http://blog.linceapp.com.br/">BLOG</a>
+                </div>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</nav>              <!-- SEARCH INICIO -->
+<div class="container-fluid">
+  <div class="row search">
+    <div class="col-xs-10 col-xs-offset-1 text-center">
+      <div class="slogan">
+        <h2>
+          A forma mais fácil de encontrar e reservar uma vaga
+        </h2>
+      </div>
+      <div class="sub-slogan">
+        <h4>
+          Aqui você encontra a vaga ideal, reserva e ainda economiza até 50%.
+        </h4>
+      </div>
+      <div class="conteudo-search-bar">
+        <div>
+          <input type="text" name="search" placeholder="Endereço, localidade ou bairro" id="local-google"/>
+          <div class="div-btn-pesquisa">
+            <a id="link-pesquisa" class="btn-pesq btn blue-btn hidden-xs">
+                RESERVAR
+            </a>
+            <a id="link-pesquisa">
+              <img src="images/place/index/search/Lupa-Index.png" alt="Lupa Pesquisa" class="img-lupa visible-xs">
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- SEARCH FIM -->
+<!-- COMO FUNCIONA INICIO -->
+<div class="container-fluid">
+  <div class="row como-funciona">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10 col-xs-12 ">
+      <div class="row">
+        <h3 class="title title-black">COMO FUNCIONA</h3>
+        <hr class="title" id="line">
+      </div>
+      <div class="row wrap-como div-front">
+        <div class="col-sm-6 col-xs-12 como-funciona-links ">
+          <div class="row text-center" id="titulo-como-funciona">
+            <h4>PROCURE</h4>
+            <h3>Onde você quer ir?</h3>
+          </div>
+          <div class="row no-gutter">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-2 como-funciona-links-detalhes text-center active" id="procure">
+              <a>PROCURE
+              <hr class="como-funciona-line-hover">
+              <hr class="como-funciona-line">
+              01
+              </a>
+            </div>
+            <div class="col-xs-1">
+              <br>
+              <hr class="como-funciona-line-preenche">
+            </div>
+            <div class="col-xs-2 como-funciona-links-detalhes text-center" id="reserve">
+              <a>RESERVE
+              <hr class="como-funciona-line-hover">
+              <hr class="como-funciona-line">
+              02
+              </a>
+            </div>
+            <div class="col-xs-1">       
+              <br>
+              <hr class="como-funciona-line-preenche">
+            </div>
+            <div class="col-xs-2 como-funciona-links-detalhes text-center" id="estacione">
+              <a>ESTACIONE
+              <hr class="como-funciona-line-hover">
+              <hr class="como-funciona-line">
+              03
+              </a>
+            </div>
+            <div class="col-xs-2"></div>
+          </div>
+          <div class="row text-center texto-como" id="texto-como">
+              <h4>Diga pra gente e indicaremos o melhor lugar para estacionar. </h4>
+          </div>
+          <div class="row text-center alinha-bottom">
+            <a class="botao-index botao-como-funciona" href="como-funciona.html" id="link-como-funciona">
+              SAIBA MAIS
+            </a>
+          </div>
+        </div> 
+        <div class="col-sm-6 div-bg-color no-gutter">
+          <div class="div-bg no-gutter">
+           <img src="images/place/index/how_it_works_section/Procure.jpg" alt="Avatar Como Funciona" id="img-como-funciona">
+          </div>
+        </div>
+      </div>
+      <!-- FECHA ROW -->
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+</div>
+<!-- COMO FUNCIONA FIM -->
+
+<!-- O LINCE INICIO -->
+<div class="container-fluid">
+  <div class="row no-gutter">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10 col-xs-12 margem-topo no-gutter">
+      <h3 class="title title-black">O LINCE</h3>
+      <hr class="title" id="line">
+      <div class="col-sm-6 ">
+        <div class="texto-lince" id="texto-lince">
+          <h3>Olá, você sabe quem nós somos?</h3>
+          <h4>O Lince chegou para descomplicar sua vida. Com a gente é <i>"no stress"</i>: com dois cliques você acha e reserva uma vaga de estacionamento, sem pagar nada a mais por isso. <br>Simples, não?
+          <br>E nossa rede de parceiros não para de crescer! Tudo feito para você!
+          </h4>
+        </div>
+      </div>
+      <div class="col-xs-10 col-xs-offset-1 visible-xs visible-sm lince-itens">
+        <h3 class="sub-titulo">
+          Descomplicação
+        </h3>
+        <h4>
+          Menos estresse e mais facilidade ao estacionar.
+        </h4>
+      </div>
+      <div class="col-xs-10 col-xs-offset-1 visible-xs visible-sm lince-itens">
+        <h3 class="sub-titulo">
+          Economia de tempo
+        </h3>
+        <h4>
+          Não perca tempo procurando uma vaga.
+        </h4>
+      </div>
+      <div class="col-xs-10 col-xs-offset-1 visible-xs visible-sm lince-itens">
+        <h3 class="sub-titulo">
+          Facilidade de pagamento
+        </h3>
+        <h4>
+          Nem precisa de dinheiro, pague direto pelo celular.
+        </h4>
+      </div>
+      <div class="col-xs-10 col-xs-offset-1 visible-xs visible-sm lince-itens">
+        <h3 class="sub-titulo">
+          Simplicidade
+        </h3>
+        <h4>
+          Encontre a vaga mais próxima em apenas dois cliques.
+        </h4>
+      </div>
+      <div class="col-xs-10 col-xs-offset-1 visible-xs visible-sm lince-itens">
+        <h3 class="sub-titulo">
+          Estimativa de preço
+        </h3>
+        <h4>
+          Saiba quanto vai pagar, compare e economize.
+        </h4>
+      </div>
+      <div class="col-sm-3 hidden-xs hidden-sm">
+        <div class="div-hover active" id="lince02">
+            <div class="image-hover" id="img02">
+              <img src="images/place/index/lince_section/002.jpg" alt="Avatar Lince 2" class="img-responsive">
+            </div>
+            <div class="div-hover-overlay" id="img02h">
+              <img src="images/place/index/lince_section/Marca-HOVER-Branca-.png" alt="Avatar Lince Hover" class="img-responsive">
+            </div>
+        </div>
+      </div>
+      <div class="col-sm-3 hidden-xs hidden-sm">
+        <div class="div-hover" id="lince05">
+          <img src="images/place/index/lince_section/005.jpg" alt="Avatar Lince 5" class="image-hover img-responsive">
+          <div class="div-hover-overlay">
+            <img src="images/place/index/lince_section/Marca-HOVER-Branca-.png" alt="Avatar Lince Hover" class="img-responsive">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-1"></div>
+  </div>
+  <div class="row no-gutter hidden-xs hidden-sm">
+    <div class="col-sm-1"></div>
+      <div class="col-sm-10 no-gutter">
+        <div class="col-sm-6">
+          <div class="div-hover" id="lince01">
+            <img src="images/place/index/lince_section/001.jpg" alt="Avatar Lince 1" class="image-hover img-responsive">
+            <div class="div-hover-overlay">
+              <img src="images/place/index/lince_section/Marca-HOVER-Branca-.png" alt="Avatar Lince Hover" class="img-responsive">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="div-hover" id="lince03">
+            <img src="images/place/index/lince_section/003.jpg" alt="Avatar Lince 3" class="image-hover img-responsive">
+            <div class="div-hover-overlay">
+              <img src="images/place/index/lince_section/Marca-HOVER-Branca-.png" alt="Avatar Lince Hover" class="img-responsive">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="div-hover" id="lince04">
+            <img src="images/place/index/lince_section/004.jpg" alt="Avatar Lince 4" class="image-hover img-responsive">
+            <div class="div-hover-overlay">
+              <img src="images/place/index/lince_section/Marca-HOVER-Branca-.png" alt="Avatar Lince Hover" class="img-responsive">
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="col-sm-1"></div>
+  </div>
+</div>
+<!-- O LINCE FIM -->
+
+<!-- SEJA PARCEIRO INICIO-->
+<div class="container-fluid margem-topo">
+  <div class="row no-gutter seja-parceiro">
+    <div class="col-sm-1"></div>
+      <div class="col-sm-10 col-xs-12 text-center">
+        <h3 class="title title-white">SEJA PARCEIRO</h3>
+        <hr class="title" id="line">
+        <div class="espaco">
+          <h1> Temos mais de 50 estacionamentos parceiros em 5 estados diferentes! </h1>
+        </div>
+        <div class="espaco">
+          <h4>Seja você também um de nossos parceiros e aumente sua renda!</h4>
+        </div>
+        <a href="seja-parceiro.html" class="botao-index botao-seja-parceiro">
+          CADASTRO
+        </a>
+    </div>
+  </div>
+</div>
+
+<!-- SEJA PARCEIRO FIM-->
+
+            <footer>
+    <!--Seção Perguntas Frequentes-->
+    <div class="container-fluid">
+        <div class="row footer-questions">
+            <hr/>
+            <div class="col-sm-6">
+                <h2 class="trebuchet-font">PERGUNTAS FREQUENTES</h2>
+                <div class="col-sm-12 questions">
+                    <br>
+                    <p class="nexa">Após reservar, minha vaga é garantida?</p>
+                    <span class="nexa-light">SIM! Feito a reserva online, pode ficar tranquilo. Sua vaga vai estar te esperando no estacionamento escolhido.</span>
+                    <br/>
+                    <br/>
+                    <p class="nexa">É só apresentar o voucher e pronto? Posso levar ele no meu celular?</p>
+                    <span class="nexa-light">É só isso. Basta apresentar o voucher gerado e apresentar ao estacionamento no dia da utilização. Ah, você
+                pode levar o voucher via celular também.</span>
+                    <br/>
+                    <br/>
+                    <p class="nexa"> Escolhi a opção mensalista, tenho que apresentar o voucher todos os dias?</p>
+                    <span class="nexa-light">Não, somente no primeiro dia que for fazer a utilização. Depois disso, o estacionamento fica responsável por cadastrar você como mensalista no sistema dele.</span>
+                    <br/>
+                    <br/>
+                </div>
+            </div>
+            <div class="col-sm-3 text-center">
+                <h2 class="trebuchet-font">NEWSLETTER</h2>
+                <div class="col-sm-12">
+                    <br>
+                    <form class="nexa-light" id="form-newsletter">
+                        <label for="name" id="name">Nome</label><br/>
+                        <input type="text" name="name" id="newsletter-name"><br/>
+                        <label for="email" id="email">Email</label><br/>
+                        <input type="email" name="email" id="newsletter-email"><br/><br/>
+                        <button type="submit" class="blue-btn">ENVIAR</button>
+                    </form>
+                    <div class="nexa-light hidden" id="sucesso-newsletter">
+                        Cadastro efetuado com sucesso!
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 text-center">
+                <h2 class="trebuchet-font">CONTATO</h2>
+                <div class="col-sm-12">
+                    <br>
+                    <p class="nexa-light">contato@linceapp.me</p>
+                    <br/>
+                    <div class="col-xs-12">
+                        <div class="col-xs-4 col-xs-offset-2">
+                            <a href="https://twitter.com/linceapp" target="_blank" class="img-footer-link"><img src="images/place/footer-twitter.png" alt="Logo Twitter"></a>
+                        </div>
+                        <div class="col-xs-4">
+                            <a href="https://www.facebook.com/linceapp" target="_blank" class="img-footer-link"><img src="images/place/footer-facebook.png" alt="Logo Facebook"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer no-gutter">
+            <div class="row no-gutter">
+                <div class="logo-footer col-xs-3">
+                    <a class="navbar-brand" href="index.html"><img class="logo-head" src="images/place/logo-horizontal.png" alt="LINCE BRAND"></a>
+                </div>
+                <div class="links-footer no-gutter col-xs-9">
+                    <a href="termos-e-condicoes-de-uso.html" class="text-center col-sm-3 col-sm-offset-6 col-xs-4">Termos e Condições</a>
+                    <a href="politica-de-privacidade.html" class="text-center col-sm-3 col-xs-5">Política de Privacidade</a>
+                    
+                </div>
+            </div>
+        </div>  
+    </div>
+</footer>        </div>
+        <script src="js/place/index/index.js"></script>
+<link rel="stylesheet" href="css/place/index/index.css"/> 
+    </body>
+</html>

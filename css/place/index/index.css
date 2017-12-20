@@ -1,0 +1,267 @@
+.seja-parceiro{
+  background-image: url('https://linceapp.com.br/images/place/index/be_a_partner_section/Fundo.jpg'); 
+  color: white;
+  background-color: gray;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
+.botao-seja-parceiro{
+  width: 180px;
+  height: 50px;
+  padding-top: 10px;
+  font-size: 20px;
+}
+.botao-index{
+  border: 2px solid white;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+.botao-index:hover{
+  border: 2px solid #4cabff;
+  text-decoration: none;
+  color:white;
+}
+.espaco{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.title-black{
+  color: #111;
+}
+.title-white{
+  color: #fff;
+}
+.como-funciona{
+  background: #dddddb;
+  padding-top: 30px;
+  padding-bottom: 45px;
+}
+.wrap-como{
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+}
+.como-funciona-links{
+  background: #353535;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  color: white;
+}
+.como-funciona-links-detalhes > a{
+  text-decoration: none;
+  color:white;
+  display: block;
+  cursor: pointer;
+}
+.como-funciona-line{
+  display: block;
+  border-bottom: 1px solid #fff;
+  margin-top: 0px;
+  padding: 0; 
+  width: 100%;
+}
+.como-funciona-line-preenche{
+  display: block;
+  border-bottom: 1px solid #fff;
+  margin-top: 23px;
+  padding: 0; 
+  width: 100%;
+}
+.como-funciona-line-hover{
+  border-top: 3px solid #353535;
+  margin-bottom: 0px;
+  padding: 0px;
+  display: block;
+}
+.como-funciona-links-detalhes:hover .como-funciona-line-hover, .active .como-funciona-line-hover{
+  border-top: 3px solid #4cabff;
+  margin-bottom: 0px;
+  padding: 0px;
+  display: block;
+}
+.como-funciona-links-detalhes > a:hover, .como-funciona-links-detalhes.active > a{
+  color: #4cabff;
+}
+.botao-como-funciona{
+  width: 150px;
+  height: 45px;
+  padding-top: 9px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.texto-como{
+  padding: 10px 80px 10px 80px;
+}
+.div-bg > img{
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  position: relative;
+}
+.div-bg-color{
+  padding: 0 !important;
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.div-bg {
+   overflow: hidden !important;
+}
+#titulo-como-funciona{
+  margin-bottom: 20px;
+}
+.alinha-bottom{
+  position:relative; 
+  bottom: 0px; 
+  margin: auto;
+  width: 100%;
+}
+@media (max-width:767px){
+  .div-front{
+    z-index: 200;
+    position: relative;
+    height: 100%;
+    background-color: transparent !important;
+  }
+  .div-bg > img{
+    position: absolute;
+    opacity: 0.1;
+    z-index: -50;
+    top: 50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    min-height:100%;
+    min-width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  .como-funciona-links{
+    margin-top: 60px;
+    height: 100%;
+    background-color: transparent;
+  }
+  .wrap-como{
+    height: 100%;
+  }
+  .como-funciona{
+    height: 100%;
+  }
+  .div-bg-color{
+    background: #353535;
+    z-index: -100;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+    overflow: hidden !important;
+    position: absolute;
+  }
+  .como-funciona{
+    padding-bottom: 0px;
+  }
+  .como-funciona-links{
+    padding-top: 0px;
+  }
+  .texto-como{
+  padding: 10px 40px 20px 40px;
+  }
+}
+.div-hover {
+  position: relative;
+  background: #040D12;
+  overflow:hidden;
+}
+.image-hover {
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  width: auto;
+}
+.div-hover-overlay {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+  background: none;
+  text-align: center;
+}
+.div-hover:hover{
+  background: #040D12;
+}
+.div-hover:hover .image-hover, .active .image-hover{
+  opacity: 0.4;
+  background: #040D12;
+}
+.div-hover:hover .div-hover-overlay, .active .div-hover-overlay{
+  opacity: 1;
+}
+.texto-lince{
+  padding: 5px 40px 10px 30px;
+  overflow: hidden;
+}
+.texto-lince > h4{
+  line-height: 105%;
+}
+.lince-itens{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.sub-titulo{
+  color: #42b6f4;
+}
+.descricao-sub{
+
+}
+.search{
+}
+.slogan{
+	margin-top: 20px;
+	margin-bottom: 20px; 
+}
+.sub-slogan{
+	margin-bottom: 40px; 
+}
+.conteudo-search-bar{
+	position: relative;
+	margin-bottom: 50px; 
+	margin-right: 0px;
+}
+.conteudo-search-bar input[type="text"] {
+	width: 100%;
+	height: 50px;
+	padding: 10px 50px 10px 10px;
+	display: inline-block;
+	font-size: 16px;
+	background-color: white;
+}
+.div-btn-pesquisa{
+	position: absolute;
+	right: 5px;
+	bottom: 15px;
+	height: 30px;
+	display: inline-block;
+}
+.btn-pesq{
+	padding: 9px;
+	width: 130px;
+	height: 40px;
+	display: block;
+}
+@media (max-width:767px){
+	.div-btn-pesquisa{
+		bottom: 10px;
+	}
+}
+/*# sourceMappingURL=index.css.map */
